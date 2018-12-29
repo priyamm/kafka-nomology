@@ -4,6 +4,8 @@ public class User {
     private String name;
     private String message;
 
+    public User() {}
+
     public User(String name, String message) {
         this.name = name;
         this.message = message;
@@ -23,5 +25,13 @@ public class User {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", message='" + message + '\'' +
+                '}';
     }
 }
